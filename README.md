@@ -45,13 +45,13 @@ following properties **FullName** , **DateOfBirth**, **GrossIncome**,
 
 *The following validation should apply:*
 
--   FullName -- at least two words separated by space -- allowed symbols
+-   FullName - at least two words separated by space - allowed symbols
     letters and spaces only (mandatory)
 
--   SSN -- a valid 5 to 10 digits number unique per taxpayer (mandatory)
+-   SSN - a valid 5 to 10 digits number unique per taxpayer (mandatory)
     (e.g. 12345, 6543297811)
 
--   GrossIncome -- a valid number for the amount for gross income
+-   GrossIncome - a valid number for the amount for gross income
     (mandatory)
 
 -   CharitySpent - a valid number for the amount of annual charity spent
