@@ -3,7 +3,7 @@ using TaxCalculator.API.Models;
 
 namespace TaxCalculator.API.Extensions
 {
-    public static class TaxPlayerExtension
+    public static class TaxPlayerModelExtension
     {
         private readonly static float noTaxationAmount = 1000;
         private readonly static float noSocialContributionsAmount = 2000;
