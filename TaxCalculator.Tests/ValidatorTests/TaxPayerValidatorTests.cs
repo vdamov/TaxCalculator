@@ -17,6 +17,7 @@ namespace TaxCalculator.Tests.ValidatorTests
         [Theory]
         [InlineData(null)]
         [InlineData("")]
+        [InlineData("OneWord")]
         [InlineData("       ")]
         public async Task TaxPayer_WithInvalidFullName_ShouldReturnValidationError(string invalidFullNameValue)
         {

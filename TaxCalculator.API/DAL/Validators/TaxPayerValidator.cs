@@ -7,7 +7,9 @@ namespace TaxCalculator.API.DAL.Validators
     {
         public TaxPayerValidator()
         {
-            RuleFor(tp => tp.FullName).NotEmpty();
+            RuleFor(tp => tp.FullName)
+                .Matches(@"^\w+\ \w+$")
+                .NotEmpty();
             RuleFor(tp => tp.SSN).NotEmpty()
                                  .MinimumLength(5)
                                  .MaximumLength(10)
