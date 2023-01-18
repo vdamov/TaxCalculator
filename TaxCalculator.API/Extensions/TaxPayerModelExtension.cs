@@ -8,7 +8,7 @@ namespace TaxCalculator.API.Extensions
         private readonly static float noTaxationAmount = 1000;
         private readonly static float noSocialContributionsAmount = 2000;
 
-        public static TaxPayer ToTaxPlayer(this TaxPayerModel model)
+        public static TaxPayer ToTaxPayer(this TaxPayerModel model)
         {
             float taxableAmount, incomeTax, netIncome, socialTax, totalTax;
 

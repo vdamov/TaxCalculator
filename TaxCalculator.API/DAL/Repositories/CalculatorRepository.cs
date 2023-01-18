@@ -16,7 +16,7 @@ namespace TaxCalculator.API.DAL.Repositories
 
         public async Task<TaxPayer> AddTaxPayerAsync(TaxPayerModel model)
         {
-            var taxPayer = model.ToTaxPlayer();
+            var taxPayer = model.ToTaxPayer();
 
             await dbContext.AddAsync(taxPayer);
             await dbContext.SaveChangesAsync();
