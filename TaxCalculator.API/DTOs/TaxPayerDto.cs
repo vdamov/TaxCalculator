@@ -1,6 +1,6 @@
 ﻿namespace TaxCalculator.API.DTOs
 {
-    public class TaxPayerDto
+    public record TaxPayerDto
     {
         public float GrossIncome { get; set; }
         public float CharitySpent { get; set; }

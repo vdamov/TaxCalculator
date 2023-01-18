@@ -1,6 +1,6 @@
 ﻿namespace TaxCalculator.API.Models
 {
-    public class TaxPayerModel
+    public record TaxPayerModel
     {
         public string SSN { get; set; }
 
