@@ -1,4 +1,4 @@
-reate a Web Api application (NET5.0 or NET6.0) that would calculate net
+Create a Web Api application (NET5.0 or NET6.0) that would calculate net
 salary given the gross value as input. The taxation rules in the country
 of Imaginaria as of date are as follows:
 
