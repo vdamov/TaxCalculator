@@ -1,7 +1,9 @@
-﻿using TaxCalculator.Common.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using TaxCalculator.Common.Entities;
 
 namespace TaxCalculator.API.DAL.Entities
 {
+    [Index(nameof(SSN), IsUnique = true)]
     public record TaxPayer : BaseEntity<Guid>
     {
         public string SSN { get; set; }

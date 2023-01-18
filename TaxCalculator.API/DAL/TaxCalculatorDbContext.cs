@@ -30,13 +30,6 @@ namespace TaxCalculator.API.DAL
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default) => SaveChangesAsync(true, cancellationToken);
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<TaxPayer>()
-                        .HasIndex(tp => tp.SSN)
-                        .IsUnique();
-        }
-
         private void ApplyAuditInfoRules()
         {
             var changedEntries = ChangeTracker

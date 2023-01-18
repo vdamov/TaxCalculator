@@ -26,7 +26,7 @@ namespace TaxCalculator.API.DAL.Repositories
 
         public async Task<TaxPayer?> GetTaxPayerBySSNAsync(string SSN)
         {
-            var taxPayer = await dbContext.TaxPayers.FirstOrDefaultAsync(tp => tp.SSN == SSN);
+            var taxPayer = await dbContext.TaxPayers.SingleOrDefaultAsync(tp => tp.SSN == SSN);
 
             return taxPayer;
         }
