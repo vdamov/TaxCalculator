@@ -33,8 +33,8 @@ namespace TaxCalculator.API.Extensions
         private static float CalculateTaxableAmount(TaxPayerModel model)
         {
             var tenPercentOfGrossIncome = model.GrossIncome * 0.1f;
-            if (model.GrossIncome <= 1000)
-                return 0;
+            if (model.GrossIncome <= noTaxationAmount)
+                return default;
 
             if (model.CharitySpent > tenPercentOfGrossIncome)
                 return model.GrossIncome - noTaxationAmount - tenPercentOfGrossIncome;
