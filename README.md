@@ -13,7 +13,7 @@ of Imaginaria as of date are as follows:
     the previous case, the taxable income is whatever is above 1000 IDR
     but social contributions never apply to amounts higher than 3000.
 
-4.  CharitySpent -- Up to 10% of the gross income is allowed to be spent
+4.  CharitySpent - Up to 10% of the gross income is allowed to be spent
     for charity causes. It then needs to be subtracted from the gross
     income base before the taxes are calculated.
 
@@ -25,13 +25,13 @@ of 2400 =\> **240**. Her Social contributions are 15% out of 2000 =\>
 **300**. In total her tax is **540** and she gets to bring home 2860 IDR
 
 Example 3: Mick has a salary of 2500 IDR. He has spent 150 IDR on
-charity causes during the year. His taxable gross income is 1500 -- 150
+charity causes during the year. His taxable gross income is 1500 - 150
 = 1350 IDR owns income tax: 10% out of 1350 =\> **135**. His Social
 contributions are 15% out of 1350 =\> **202.5**. In total her tax is
 **337.5** and he gets to bring home **2162.5** IDR
 
 Example 4: Bill has a salary of 3600 IDR. He has spent 520 IDR on
-charity causes during the year. His taxable gross income is 3600 -- 360
+charity causes during the year. His taxable gross income is 3600 - 360
 = 3240 IDR owns income tax: 10% out of 2240 =\> **224**. His Social
 contributions are 15% out of 2000 =\> **300**. In total her tax is
 **524** and she gets to bring home **3076** IDR
