@@ -34,7 +34,7 @@ charity causes during the year. His taxable gross income is 3600 -- 360
 contributions are 15% out of 2000 =\> **300**. In total her tax is
 **524** and she gets to bring home **3076** IDR
 
-***[Directions]{.underline}***
+***<ins>Directions</ins>***
 
 The Api should have one Controller (Calculator) with one endpoint
 Calculate (POST) and should accept a TaxPayer contract with the
