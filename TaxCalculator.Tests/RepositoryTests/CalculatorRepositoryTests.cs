@@ -22,7 +22,11 @@ namespace TaxCalculator.Tests.RepositoryTests
             repository = new CalculatorRepository(context);
         }
 
-        //grossIncome , charitySpent, expectedIncomeTax, expectedSocialTax, expectedTotalTax, expectedNetIncome
+        //grossIncome, charitySpent, expectedIncomeTax, expectedSocialTax, expectedTotalTax, expectedNetIncome
+        //980        , 0           , 0                , 0                , 0               , 980
+        //3400       , 0           , 240              , 300              , 540             , 2860
+        //3400       , 150         , 135              , 202.5            , 337.5           , 2162.5
+        //3600       , 520         , 224              , 300              , 524             , 3076
         [Theory]
         [InlineData(980, 0, 0, 0, 0, 980)]
         [InlineData(3400, 0, 240, 300, 540, 2860)]
