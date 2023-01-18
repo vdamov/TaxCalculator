@@ -37,11 +37,6 @@ namespace TaxCalculator.API.DAL
                         .IsUnique();
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseInMemoryDatabase(databaseName: Constants.DbSchemaName);
-        }
-
         private void ApplyAuditInfoRules()
         {
             var changedEntries = ChangeTracker

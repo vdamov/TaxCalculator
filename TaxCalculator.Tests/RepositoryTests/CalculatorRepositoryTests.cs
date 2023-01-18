@@ -16,7 +16,7 @@ namespace TaxCalculator.Tests.RepositoryTests
         public CalculatorRepositoryTests()
         {
             var dbContextOptions = new DbContextOptionsBuilder<TaxCalculatorDbContext>()
-                .UseInMemoryDatabase(databaseName: Constants.DbSchemaName)
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
                 .Options;
             context = new TaxCalculatorDbContext(dbContextOptions);
             repository = new CalculatorRepository(context);
@@ -85,7 +85,8 @@ namespace TaxCalculator.Tests.RepositoryTests
 
             //assert
             Assert.NotNull(taxPayer);
-            Assert.Equal(model.SSN, taxPayer.SSN);
+            Assert.Equal(model.CharitySpent, taxPayer.CharitySpent);
+            Assert.Equal(model.GrossIncome, taxPayer.GrossIncome);
         }
 
         public void Dispose()
